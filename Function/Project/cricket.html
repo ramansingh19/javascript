@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if-else</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- <div class="main">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat, eaque perferendis saepe animi consequatur recusandae est. A, magni quia!</p>
+  </div> -->
+
+      <h1>Bat Ball Stump Game</h1>
+      <button class="match" 
+      onclick="
+
+      generatecomputerchoice();
+      
+      let result;
+      function computerchoice(){
+        (computerchoice === 'ball')
+        (computerchoice ==='bat')
+        (computerchoice === 'Stump')
+      }
+      computerchoice();
+      result = 'user won';
+      computerchoice();
+      result = 'it is a tie';
+      computerchoice();
+        result = 'Computer won';
+
+          
+
+      alert(`you are chosen bat. Computerchoice is ${computerchoice} and : ${result}`)
+
+      ">bat</button>
+
+
+
+      <button class="match" onclick="
+      
+      generatecomputerchoice();
+
+
+      let result1;
+      function computerchoice(){
+        (computerchoice === 'ball')
+        (computerchoice ==='bat')
+        (computerchoice === 'Stump')
+      }
+      computerchoice();
+      result1 = 'it is tie';
+      computerchoice();
+      result1 = 'computer won';
+      computerchoice();
+        result1 = 'user won';
+          
+
+      alert(`you are chosen ball. Computerchoice is ${computerchoice1} and : ${result1}`)
+
+      "
+      >ball</button>
+
+
+
+
+
+      <button class="match"
+      onclick="
+
+      generatecomputerchoice();
+
+      let result2;
+      if (computerchoice2 === 'ball'){
+        result2 = 'Computer Won';
+      }
+        if (computerchoice2 ==='bat'){
+        result2 = 'User won';
+        }
+        if (computerchoice2 === 'Stump') {
+        result2 = 'it is a tie';
+        }
+          
+
+      alert(`you are chosen Stump. Computerchoice is ${computerchoice2} and : ${result2}`)
+      "
+      >Stump</button>
+      
+
+
+
+  <script>
+
+    let computerchoice;
+    function generatecomputerchoice(){
+      let randomnumber = Math.random() * 3;
+      if(randomnumber > 0 &&  randomnumber <= 1){
+        computerchoice = 'bat';
+        // console.log('computer choose bat');
+      }else if (randomnumber > 1 && randomnumber <= 2) {
+        computerchoice = 'ball';
+        // console.log('computer choose ball');
+      }else{
+        computerchoice = 'Stump'
+        // console.log('computer choose stump');
+        
+      }
+      
+      
+    }
+    
+  </script>
+      // if (computerchoice === 'ball'){
+      //   result = 'user won';
+      // }
+      //   if (computerchoice ==='bat'){
+      //   result = 'it is a tie';
+      //   }
+      //   if (computerchoice === 'Stump') {
+      //   result = 'Computer won';
+      //   }
+  
+</body>
+</html>
