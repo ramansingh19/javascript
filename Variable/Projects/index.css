@@ -1,0 +1,32 @@
+
+
+.main-content{
+  margin: 100px 0 0 200px;
+  background-color: rgb(219, 209, 209);
+  border-radius: 10px;
+  width: 200px;
+  border: 2px solid black;
+  
+}
+
+#display{
+    width: 85%;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.button-container{
+  flex-wrap: wrap;
+  display: flex;
+  
+  justify-content: center;
+  
+}
+
+.button{
+  
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+  
+}

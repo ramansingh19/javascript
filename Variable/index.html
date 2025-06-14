@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>varibles</title>
+</head>
+<body>
+
+  <button class="Bag" onclick="cartquantity = cartquantity+1; document.querySelector('#cart').innerText = `Your bag has ${
+  cartquantity} items`">Add to Bag</button>
+
+  <button class="wishlist" onclick="cartquantity = cartquantity-1;
+  document.querySelector('#cart').innerText = `Your bag has ${
+  cartquantity} items`">❤️ Move to Wishlist</button>
+
+  <button class="Bag" onclick="cartquantity = cartquantity +2;document.querySelector('#cart').innerText = `Your bag has ${
+  cartquantity} items`">Add 1+1 sale items</button>
+
+  <h1 id="cart"></h1>
+
+  <script src="index.js">
+
+
+  </script>
+</body>
+</html>
