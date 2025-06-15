@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>if-else</title>
+  <link rel="stylesheet" href="cricket.css3">
   <!-- <link rel="stylesheet" href="index.css"> -->
 </head>
 <body>
@@ -17,42 +18,21 @@
       onclick="
 
       let computerchoice = generatevalue();
+      // console.log(generatevalue);
       
-      let result;
-      if (computerchoice === 'ball'){
-        result = 'user won';
-      }
-        if (computerchoice ==='bat'){
-        result = 'it is a tie';
-        }
-        if (computerchoice === 'Stump') {
-        result = 'Computer won';
-        }
-          
-
-      alert(`you are chosen bat. Computerchoice is ${computerchoice} and : ${result}`)
+      
+      let result = getresult('bat', computerchoice);
+      showResult('bat', computerchoice , result)
 
       ">bat</button>
-
-
 
       <button class="match" onclick="
 
       computerchoice = generatevalue();
       
-      let result1;
-      if (computerchoice === 'ball'){
-        result1 = 'it is a tie';
-      }
-        if (computerchoice ==='bat'){
-        result1 = 'Computer Won';
-        }
-        if (computerchoice === 'Stump') {
-        result1 = 'User Won';
-        }
-          
-
-      alert(`you are chosen ball. Computerchoice is ${computerchoice} and : ${result1}`)
+      result = getresult('ball', computerchoice);
+      
+      showResult('ball', computerchoice , result)
 
       "
       >ball</button>
@@ -63,43 +43,16 @@
 
       computerchoice = generatevalue();
       
-      let result2;
-      if (computerchoice === 'ball'){
-        result2 = 'Computer Won';
-      }
-        if (computerchoice ==='bat'){
-        result2 = 'User won';
-        }
-        if (computerchoice === 'Stump') {
-        result2 = 'it is a tie';
-        }
-          
-
-      alert(`you are chosen Stump. Computerchoice is ${computerchoice} and : ${result2}`)
+      result = getresult('Stump', computerchoice);
+      
+          showResult('Stump', computerchoice , result)
 
       "
       >Stump</button>
 
-  <script>
-    
+  <script src="cricket.js">
 
-    function generatevalue() {
-      let randomnumber = Math.random() * 3;
-      
-      if(randomnumber > 0 &&  randomnumber <= 1){
-        return 'bat';
-        // console.log('computer choose bat');
-      }else if (randomnumber > 1 && randomnumber <= 2) {
-        return 'ball';
-        // console.log('computer choose ball');
-      }else{
-        return 'Stump'
-        // console.log('computer choose stump');
-        
-      }
-      
-    }
   </script>
-  
+   
 </body>
 </html>
