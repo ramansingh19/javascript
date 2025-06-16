@@ -4,6 +4,11 @@ let score = {
       win : 0,
       lost : 0,
       tie : 0,
+      displayresult : function () {
+      return (`No. of matches Win:${score.win} 
+          No. of matches Lost:${score.lost} 
+              No. of matches Tie:${score.tie}`)
+      }
     }
 
 //using function
@@ -87,6 +92,8 @@ let score = {
       alert(`you are chosen ${userMove}. Computerchoice is ${computerMove} and : 
           
       ${result}
+
+      ${score.displayresult()}
       
-      win:${score.win} lost:${score.lost} tie:${score.tie}`)
+      `)
     }
