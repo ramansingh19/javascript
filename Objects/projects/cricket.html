@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if-else</title>
+  <link rel="stylesheet" href="cricket.css">
+  <style>
+  body {
+    text-align: center;
+  }
+  </style>
+  <!-- <link rel="stylesheet" href="cricket.css"> -->
+  <!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+<body>
+
+  <!-- <div class="main">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat, eaque perferendis saepe animi consequatur recusandae est. A, magni quia!</p>
+  </div> -->
+   <div class="main">
+      <h1>Bat Ball Stump Game</h1>
+      <button class="match" 
+      onclick="
+
+      let computerchoice = generatevalue();
+      // console.log(generatevalue);
+      
+      
+      let result = getresult('bat', computerchoice);
+      showResult('bat', computerchoice , result)
+
+      ">bat</button>
+
+      <button class="match" onclick="
+
+      computerchoice = generatevalue();
+      
+      result = getresult('ball', computerchoice);
+      
+      showResult('ball', computerchoice , result)
+
+      "
+      >ball</button>
+
+
+      <button class="match"
+      onclick="
+
+      computerchoice = generatevalue();
+      
+      result = getresult('Stump', computerchoice);
+      
+          showResult('Stump', computerchoice , result)
+
+      "
+      >Stump</button>
+    </div>
+
+  <script src="cricket.js">
+
+  </script>
+   
+</body>
+</html>
