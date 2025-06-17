@@ -15,7 +15,7 @@ button:hover {
   opacity: 1;
   cursor: pointer;
   
-  background-color: bisque;
+  background-color: rgb(152, 143, 133);
   
 }
 
@@ -30,3 +30,56 @@ button {
   font-weight :400;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.user-input {
+  font-size: 50px;
+  background-color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.computer-input {
+   font-size: 50px;
+   background-color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.result {
+  font-size: 50px;
+  background-color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.score {
+  font-size: 50px;
+  background-color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.match {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 20px;
+  
+}
+
+.match:hover {
+  box-shadow: 12px 12px 2px 1px rgba(203, 82, 63, 0.2);
+  
+}
+
+/* use to  develop image closing  */
+.bat:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* .image-src:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+  
+} */

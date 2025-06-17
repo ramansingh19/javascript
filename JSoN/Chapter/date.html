@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <button class="my-button "></button>
+  <div id="parent">
+  <p id="old-paragraph">This is the old paragraph.</p>
+</div>
+  <script>
+
+//               DATE
+    // let Findtime = new Date();
+    // console.log(Findtime);
+    
+    // console.log(Findtime.getDate());
+    // console.log(Findtime.getDay());
+
+    // console.log(Findtime.getFullYear());
+    // console.log(Findtime.getHours());
+    // console.log(Findtime.getMilliseconds());
+    // console.log(Findtime.getMinutes());
+    // console.log(Findtime.getTimezoneOffset());
+    // console.log(Findtime.getUTCSeconds());
+    // console.log(Findtime.getDate());
+    // console.log(Findtime.toJSON());
+
+//           DOM PROPERTY AND METHOD
+    // let button = document.createElement('my-button')
+    // button.innerText = 'Raman';
+    // document.querySelector('.my-button').appendChild(button)
+    // button.innerText = 'Aman'
+    //  document.querySelector('.my-button').remove(button)
+    //   document.querySelector('.my-button').replaceChild(button)
+
+
+  const parent = document.getElementById('parent');
+const oldParagraph = document.getElementById('old-paragraph');
+const newParagraph = document.createElement('p');
+newParagraph.textContent = 'This is the new paragraph.';
+
+parent.replaceChild(newParagraph, oldParagraph);
+
+console.log(newParagraph);
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,5 +1,5 @@
 
-//using object 
+//using this object method to generate the score
 
 let scorestr = localStorage.getItem('score');
 let score;
@@ -13,14 +13,17 @@ function resetScore(scorestr) {
       };
 
 score.displayresult = function() {
-      return (`No. of matches Win:${score.win} 
-          No. of matches Lost:${score.lost} 
-              No. of matches Tie:${score.tie}`)
+      return (`Score : Win:${score.win} lost:${score.lost} Tie:${score.tie}`)
 };
+
+//this for the purpose of reset button to score change into zero
+showResult();
   
+// document.querySelector('.reset').innerText = resetScore();
+
 }
 
-//using function
+//using function to get value of 0 t0 3 random number
     function generatevalue() {
       let randomnumber = Math.random() * 3;
       
@@ -38,6 +41,8 @@ score.displayresult = function() {
 
     }
 
+
+    //using computerMove , userMove to get result by clicking the button and get result by using function that is easy to define the value
     function getresult(computerMove , userMove) {
     
       if (userMove === 'bat'){
@@ -95,17 +100,22 @@ score.displayresult = function() {
     }
 
     function showResult(userMove,computerMove,result) {
+
       localStorage.setItem('score', JSON.stringify(score))
       //using this object to show on console score.
       console.log(score);
-      
-      alert(`you are chosen ${userMove}. Computerchoice is ${computerMove} and : 
-          
-      ${result}
+// ? this symbol is use to agar yeh sahi nhi hai toh aap yeh use kre situation.
+      document.querySelector('.user-input').innerText =
+      userMove !== undefined ? `you are chosen ${userMove}` : ' ';
 
-      ${score.displayresult()}
-      
-      `)
+      document.querySelector('.computer-input').innerText = 
+      computerMove !== undefined ? `you are chosen ${computerMove}` : '';
+
+      document.querySelector('.result').innerText = 
+      result !== undefined ? result : '';
+
+      document.querySelector('.score').innerText = score.displayresult();
+
     }
 
 

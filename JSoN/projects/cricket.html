@@ -18,6 +18,9 @@
   <!-- <div class="main">
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat, eaque perferendis saepe animi consequatur recusandae est. A, magni quia!</p>
   </div> -->
+
+  
+
    <div class="main">
       <h1>Bat Ball Stump Game</h1>
       <button class="match" 
@@ -30,7 +33,7 @@
       let result = getresult('bat', computerchoice);
       showResult('bat', computerchoice , result)
 
-      ">bat</button>
+      "><img src="images/download.jpeg" alt="bat" class="bat"></button>
 
       <button class="match" onclick="
 
@@ -41,7 +44,7 @@
       showResult('ball', computerchoice , result)
 
       "
-      >ball</button>
+      ><img src="images/download (1).jpeg" alt="bat" class="bat"></button>
 
 
       <button class="match"
@@ -54,16 +57,27 @@
           showResult('Stump', computerchoice , result)
 
       "
-      >Stump</button>
+      ><img src="images/download (2).jpeg" alt="bat" class="bat"></button>
     </div>
 
-    <button class="match"  
+   
+
+    <div class="user-input"></div>
+    <div class="computer-input"></div>
+    <div class="result"></div>
+    <div class="score"></div>
+    <div class="reset"></div>
+
+    <button class="match1"  
 
     onclick="localStorage.clear()
     resetScore ();
     ">Reset</button>
 
   <script src="cricket.js">
+
+
+ 
 
   </script>
    
