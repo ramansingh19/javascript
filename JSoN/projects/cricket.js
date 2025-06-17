@@ -1,15 +1,24 @@
 
 //using object 
-let score = {
+
+let scorestr = localStorage.getItem('score');
+let score;
+resetScore(scorestr);
+
+function resetScore(scorestr) {
+  score = scorestr ?   JSON.parse(scorestr) : {
       win : 0,
       lost : 0,
       tie : 0,
-      displayresult : function () {
+      };
+
+score.displayresult = function() {
       return (`No. of matches Win:${score.win} 
           No. of matches Lost:${score.lost} 
               No. of matches Tie:${score.tie}`)
-      }
-    }
+};
+  
+}
 
 //using function
     function generatevalue() {
@@ -86,6 +95,7 @@ let score = {
     }
 
     function showResult(userMove,computerMove,result) {
+      localStorage.setItem('score', JSON.stringify(score))
       //using this object to show on console score.
       console.log(score);
       
@@ -97,3 +107,8 @@ let score = {
       
       `)
     }
+
+
+
+    // console.log('string'.;
+    
