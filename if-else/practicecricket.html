@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<h1>Bat Ball Stump</h1>
+<button style="font-size: 30px;  padding: 10px marg
+30px;" onclick="
+    let number = Math.random() * 3;
+    let computerChoice;
+    if(number > 0  && number <= 1){
+      computerChoice = 'ball';
+
+    }else if(number > 1 && number <= 2){
+      computerChoice = 'bat';
+
+    }else if(number > 2 && number <= 3){
+      computerChoice = 'stump';
+    }
+    let result ;
+    if (computerChoice === 'bat') {
+        result ='it is tie';
+    }else if (computerChoice === 'ball') {
+      console.log('computer won');
+      
+    }else if (computerChoice === 'stump') {
+      console.log('user won');
+      
+    }
+
+    alert(`Your prediction result is : computerchoice  ${computerChoice} and : ${result}`)
+    
+
+
+">Bat</button>
+
+
+
+
+
+<button style="font-size: 30px;  padding: 10px marg
+30px;">Ball</button>
+<button style="font-size: 30px; padding: 10px marg
+30px;">Stump</button>
+
+<script>
+
+</script>
+
+  
+</body>
+</html>
