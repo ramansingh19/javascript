@@ -52,6 +52,7 @@ button {
 }
 
 .score {
+  margin-top: 30px;
   font-size: 50px;
   background-color: aliceblue;
   font-family: 'Courier New', Courier, monospace;
@@ -75,6 +76,10 @@ button {
     transform: scale(1.03);
     transition: 0.5s ease-in-out;
     
+}
+
+.reset {
+  margin-top: 20px;
 }
 
 /* .image-src:hover {
