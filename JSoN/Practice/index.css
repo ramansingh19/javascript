@@ -1,0 +1,36 @@
+body {
+  margin-left: 500px;
+  
+}
+.js-even {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.js-odd {
+  background-color: rgb(175, 25, 25);
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: 30px; 
+  margin-top: 20px;
+  
+}
+
+.button {
+  background-color: black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  display: flex;
+  border-radius: 20px;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 55px;
+  width: 400px;
+  font-size: 30px;
+}
