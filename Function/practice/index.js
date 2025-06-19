@@ -42,4 +42,35 @@
           // let fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
           console.log((`Your temperature is : ${celsiusToFahrenheit(39)}`));
           
+
+          // que 1
+          let a;
+          function Poem() {
+            return ` 
+            'POEM' 
+            Twinkle twinkle little star how are under what you are`
+          }
+          
+          console.log(Poem());
+
+          //que 2
+          function dice() {
+            let number = Math.floor(Math.random() * 6) + 1;
+            let rand = number
+            if (rand == 1) {
+              return `Dice number is 1`
+            }else if (rand == 2) {
+              return `Dice number is 2`
+            }else if (rand == 3) {
+              return `Dice number is 3`
+            }else if (rand == 4) {
+              return `Dice number is 4`
+            }else if (rand == 5) {
+              return `Dice number is 5`
+            }else if (rand == 6) {
+              return `Dice number is 6`
+            }
+          }
+          console.log(dice());
+          
           
