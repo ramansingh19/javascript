@@ -1,4 +1,4 @@
-//Array using function 
+//Array  using foreach function 
 let arr = [1,2,3,4,5]
 
 function print(el) {
@@ -74,10 +74,20 @@ let multiple = num1.every((el) =>
 //que 
 let arr5 = [3,5,6,7,8,5,3,6,65]
 
-let min = arr5.reduce((min ,el) => {
+let min1 = arr5.reduce((min ,el) => {
   if(min < el){
     return min
   }else {
     return el
   }
 })
+console.log(min1);
+
+function sum (a=2,b=2){
+  return a+b;
+}
+console.log(sum(1,2));
+console.log(sum(3,2));
+console.log(sum(5));
+console.log(sum(0));
+
