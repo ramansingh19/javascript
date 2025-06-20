@@ -133,18 +133,55 @@
 // for(let f=0; f<fruits.length; f++){
 //   console.log(`list : ${f}`);
 //   for(let j=0; j<fruits.length; j++){
-//     console.log(`names : ${j,fruits[j]}`);
+//     console.log(`names : ${j,fruits[f][j]}`);
     
 //   }
   
 // }
 
 //using nested loop 
-let marks=[['aman',  90], ['ravi', 90], ['mohit', 99]];
+// let marks=[['aman',  90], ['ravi', 90], ['mohit', 99]];
 
-for(let i=0; i<marks.length; i++){
-  for(let q=0; q<marks[i].length; q++){
-    console.log(marks[i] [q]);
+// for(let i=0; i<marks.length; i++){
+//   for(let q=0; q<marks[i].length; q++){
+//     console.log(marks[i] [q]);
+    
+//   }
+// }
+
+// let student = [['aman', 90], ['mohit', 95], ['motu',100]]
+
+// for(let i=0; i<student.length; i++){
+//   console.log(student[i]);
+//   for(let j=0; j<student[i].length; j++){
+//     console.log(student[i][j]);
+    
+//   }
+// }
+
+//using for of loops
+let name = ['mango', 'apple', 'banana']
+
+for(i of name){
+  console.log(i);
+  
+}
+
+// let chars = ['abe wo laure'];
+
+for (char of 'Raman'){
+  console.log(char);
+  
+}
+
+let a =[['raman', 'alu', 'sdd'],['mohit','ksjdj']]
+
+for(list of a){
+  console.log(list);
+  
+  for(inner of list) {
+    console.log(inner);
     
   }
 }
+
