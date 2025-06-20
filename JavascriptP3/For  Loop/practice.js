@@ -90,11 +90,61 @@
 //   }
 // } 
 
-for (let a=1; a<=3; a++){
-  console.log(`outer loop ${a}`);
+// for (let a=1; a<=3; a++){
+//   console.log(`outer loop ${a}`);
   
-  for(let z=5; z>=2; z--){
-    console.log(`ineer loop : ${z}`);
+//   for(let z=5; z>=2; z--){
+//     console.log(`ineer loop : ${z}`);
+    
+//   }
+// }
+
+// let a = prompt('what is your number')
+// a= parseInt(a)
+// for (let n = a; n<=a*10; n++){
+//   if (n % a == 0 ) {
+//     console.log(n);
+    
+//   }
+// }
+
+//using while loop 
+// let i = prompt('what is number');
+// i = parseInt(i)
+// let a = i ;
+// while(a<=i*10){
+//   if (a % i ==0) {
+//     console.log(a);
+//   }
+//   a++;
+  
+  
+// }
+
+//using looops with array
+// let names= ['Raman', 'Aman', 'mikku', 'sunny', 'summy'];
+// for(let i=names.length-1; i>=0; i--){
+//   console.log(i,names[i]);
+
+// }
+
+//using nested loop using array
+// let fruits = [['mango', 'apple', 'banana'], ['pompogrante','guava'],['nano','lolo']]
+// for(let f=0; f<fruits.length; f++){
+//   console.log(`list : ${f}`);
+//   for(let j=0; j<fruits.length; j++){
+//     console.log(`names : ${j,fruits[j]}`);
+    
+//   }
+  
+// }
+
+//using nested loop 
+let marks=[['aman',  90], ['ravi', 90], ['mohit', 99]];
+
+for(let i=0; i<marks.length; i++){
+  for(let q=0; q<marks[i].length; q++){
+    console.log(marks[i] [q]);
     
   }
 }
