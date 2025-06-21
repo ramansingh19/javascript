@@ -1,33 +1,37 @@
-//building Todo List 
+//building todo list 
 
-let list = [];
+let todo = [];
 
-let todo = prompt('choose what do you want')
-
+let req = prompt('What is your request');
 
 while(true){
 
-  if(todo == 'quit'){
-    console.log('you are quitting the app');
+  if (req == 'quit') {
+    console.log('you are quitting the game');
     break;
-    
-  }else if (todo == 'list'){
-    console.log('-------------');
-    for(lists of list){
-      console.log(lists);
+  }
+
+   if (req == 'list') {
+    for(let i = 0; i<todo.length; i++){
+      console.log(i,todo[i]);
       
     }
-    console.log('-------------');
-  }
-  
-  else if(todo == 'add'){
-    
-    let add = prompt('please add what you want to add ')
-    list.push(add);
-    console.log('task will be added');
-    
-  }
-  todo = prompt('choose what do you want')
+      console.log('-----------');
+    } else if (req == 'add') {
+      let list = prompt('What do you want to add');
+      todo.push(list);
+      console.log('task added');
+      
+    }else if(req == 'delete'){
+      let idx = prompt('please enter the task you want to delete');
+      todo.splice(idx,1);
+    } else {
+      console.log('wrong request');
+      
+    }
+    req = prompt('please enter your request')
 
-}
+  }
+
+
 
