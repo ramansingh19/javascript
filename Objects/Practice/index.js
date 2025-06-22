@@ -139,16 +139,53 @@
 // console.log(num);
 
 //number 1 to 100
-let no = Math.random();
-no = no *100 +1;
-no = Math.floor(no)
-console.log(no);
+// let no = Math.random();
+// no = no *100 +1;
+// no = Math.floor(no)
+// console.log(no);
 
-//
-let num = Math.random();
-num = num * 5 + 20;
-num = Math.ceil(num);
-console.log(num);
+// //
+// let num = Math.random();
+// num = num * 5 + 20;
+// num = Math.ceil(num);
+// console.log(num);
 
       
 
+//Question 
+let num = Math.floor(Math.random() * 6) + 1;
+console.log(num);
+
+
+//Que 2
+
+let carlist = [ 
+  {
+    name : 'BMW',
+    model : 'Q8',
+    color : 'black',
+  },
+  {
+    name : 'audi',
+    model : 'A8',
+    color : 'black',
+  }
+]
+console.log(carlist[1].model);
+
+//Que 3
+let PersonName = [
+  {
+    name : 'Raman',
+    Age : 21,
+    city : 'Muzaffarpur',
+  },
+  {
+    name : 'Aman',
+    Age : 26,
+    city : 'Muzaffarpur',
+  }
+]
+console.log(PersonName[0].city = 'New Work');
+console.log(PersonName[0].country = 'united state')
+console.log(PersonName[0])
