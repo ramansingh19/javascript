@@ -75,6 +75,25 @@ console.log(`largest string in arr is : ${largerCount(country)}`);
 // Qs4. Write a JavaScript function to count the number of vowels in a String
 // argument.
 
+let string = "Raman Singh";
+
+function vowels(string) {
+  let count = 0;
+  for(let i=0; i<string.length; i++){
+    if(
+      string.charAt(i) == 'a'  ||
+      string.charAt(i) == 'i'  ||
+      string.charAt(i) == 'o'  ||
+      string.charAt(i) == 'u'  ||
+      string.charAt(i) == 'e' ){
+      count++;
+    }
+  
+  }
+  return  count;
+}
+console.log(vowels(string));
+
 
 
 
