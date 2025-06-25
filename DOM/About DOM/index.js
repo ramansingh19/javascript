@@ -9,3 +9,12 @@ for(let i=0; i<image.length; i++){
   
   
 }
+
+let heading = document.querySelector('.name');
+heading.innerHTML = 'Aman Kumar';
+heading.innerHTML = '<b>Aman Kumar</b>';
+heading.innerHTML = '<u>Aman Kumar</u>';
+
+
+
+
