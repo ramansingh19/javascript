@@ -5,9 +5,16 @@
 
 }
 
+.green{
+  color: green;
+  text-decoration: underline black wavy;
+  
+}
+
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
   object-fit: cover;
+  margin-top: 50px;
   
 }
