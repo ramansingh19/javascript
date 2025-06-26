@@ -18,6 +18,6 @@ function getRandomcolor() {
   let green = Math.floor(Math.random() * 255);
   let blue = Math.floor(Math.random() * 255);
 
-  let color = (`rgb${red}, ${blue} , ${green}`);
+  let color = `rgb(${red}, ${green}, ${blue})`;
   return color;
 }
