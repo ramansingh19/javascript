@@ -11,6 +11,8 @@ button {
   font-size: 20px;
   padding: 10px;
   margin-top: 20px;
+  border-radius: 15px;
+
 }
 
 div{
@@ -18,5 +20,17 @@ div{
   height: 100px;
   width: 500px;
   margin:  0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
 }
