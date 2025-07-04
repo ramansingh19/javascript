@@ -1,102 +1,136 @@
-// function hello() {
-//   console.log("kya haal hai");
+// // function hello() {
+// //   console.log("kya haal hai");
   
-// }
+// // }
 
-// function stack () {
-//   hello();
-// }
+// // function stack () {
+// //   hello();
+// // }
 
-// stack();
+// // stack();
 
-// //Visulizing the call stack
-// function one() {
-//   return 1;
-// }
+// // //Visulizing the call stack
+// // function one() {
+// //   return 1;
+// // }
 
-// function two() {
-//   return one() + 1;
-// }
+// // function two() {
+// //   return one() + 1;
+// // }
 
-// function three() {
-//   let ans = two() + one(); 
-//   console.log(ans);
+// // function three() {
+// //   let ans = two() + one(); 
+// //   console.log(ans);
   
-// }
-// three();
+// // }
+// // three();
 
-// //js is single threaded
+// // //js is single threaded
 
 
-// setTimeout(() => {
-//   console.log("hello");
+// // setTimeout(() => {
+// //   console.log("hello");
   
-// }, 2000);
+// // }, 2000);
 
-// setTimeout(() => {
-//   console.log("world");
+// // setTimeout(() => {
+// //   console.log("world");
   
-// }, 2000);
+// // }, 2000);
 
-// console.log("phele ye hoga");
+// // console.log("phele ye hoga");
+let h1 = document.querySelector("h1");
 
-function changeColor(color, delay , nextColorChanghe) {
-  setTimeout(() => {
-    let h1 = document.querySelector("h1");
+function changeColor(color, delay) {
+  return  new Promise((resolve, reject) => {
+    setTimeout(() => {
     h1.style.color = color;
-    if(nextColorChanghe) nextColorChanghe();
+    return resolve(`Color changed to ${color} after ${delay} milliseconds`);
   }, delay);
+  })
+  
 }
 
-changeColor("red", 1000, () => {
-  changeColor("blue", 1000, () => {
-    changeColor("pink", 1000);
+changeColor("red", 1000)
+  .then((result) => {
+    console.log(result);
+    return changeColor("green", 1500);
+  })
+  .then((result) => {
+    console.log(result);
+    return changeColor("blue", 1000);
+  })
+
+  .then ((result) => {
+    console.log(result);
+    return changeColor("orange", 1000);
+  })
+
+  .then((result) => {
+    console.log(result);
+    return changeColor("yellow", 2000);
+    
+  })
+  .then((result) => {
+    console.log(result);
+    return changeColor("pink", 1500);
+  })
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
   });
-});
 
-// setTimeout(() => {
-//   chnageColor("pink");
-// }, 2000);
+// changeColor("pink", 1000, () => {
+//   changeColor("blue", 1000, () => {
+//     changeColor("pink", 1000);
+//   });
+// });
 
-// setTimeout(() => {
-//   chnageColor("red");
-// }, 1000);
+// // setTimeout(() => {
+// //   chnageColor("pink");
+// // }, 2000);
 
-// setTimeout(() => {
-//   chnageColor("blue");
-// }, 3000);
+// // setTimeout(() => {
+// //   chnageColor("red");
+// // }, 1000);
 
-//Promises
+// // setTimeout(() => {
+// //   chnageColor("blue");
+// // }, 3000);
 
-function saveToDb(data, success, failure) {
-  let internet = Math.floor(Math.random() * 10) + 1;
-  if(internet > 4) {
-    success();
-  }else{
-    failure();
-  }
-}
+// //Promises
 
-saveToDb("Apna Mann", 
-  () => {
-  // console.log(" success1 : data saved successfully");
-  console.log(" success1 : data saved successfully");
-  saveToDb("Hello Jii!", () => {
+// function saveToDb(data, success, failure) {
+//   let internet = Math.floor(Math.random() * 10) + 1;
+//   if(internet > 4) {
+//     success();
+//   }else{
+//     failure();
+//   }
+// }
 
-    // console.log(" success2 : data saved successfully");
-    console.log(" success2 : data saved successfully");
-    saveToDb("Raman", () => {
+// saveToDb("Apna Mann", 
+//   () => {
+//   // console.log(" success1 : data saved successfully");
+//   console.log(" success1 : data saved successfully");
+//   saveToDb("Hello Jii!", () => {
 
-      console.log(" success3 : data saved successfully");
-    }, () => {
-      console.log("failure3 : weak Connection. data not saved");
-    }
-  );
-  }, () => {
-    console.log("failure3 : weak Connection. data not saved");
-  }
-);
-}, () => {
-  console.log("failure3 : weak Connection. data not saved");
-}
-);
+//     // console.log(" success2 : data saved successfully");
+//     console.log(" success2 : data saved successfully");
+//     saveToDb("Raman", () => {
+
+//       console.log(" success3 : data saved successfully");
+//     }, () => {
+//       console.log("failure3 : weak Connection. data not saved");
+//     }
+//   );
+//   }, () => {
+//     console.log("failure3 : weak Connection. data not saved");
+//   }
+// );
+// }, () => {
+//   console.log("failure3 : weak Connection. data not saved");
+// }
+// );
