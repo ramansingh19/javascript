@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+}
+
+div{
+  width : 800px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+div:hover{
+  background-color:yellowgreen;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+input {
+  font-size: 30px;
+}
+
+button {
+  font-size: 20px;
+}
+
+ul {
+  
+  font-size: 30px;
+  padding: 20px;
+}
+li {
+  padding: 10px;
+}
