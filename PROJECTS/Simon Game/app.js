@@ -4,7 +4,7 @@ let user = [];
 let level = 0;
 let started = false;
 
-let btns = ["red", "pink", "blue", "viloet"]
+let btns = ["red", "pink", "blue", "viloet"];
 
 let h2 = document.querySelector("h2");
 
@@ -91,6 +91,8 @@ function checkAns(idx) {
   if (level > highScore) {
   highScore = level;
   localStorage.setItem("highScore", highScore);
+  console.log(highScore);
+  
 }
 }
 
