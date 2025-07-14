@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let masterPlay = document.getElementById('masterPlay');
     let myProgressBar = document.getElementById('myProgressBar');
     let gif = document.getElementById('gif');
+    let songItem = document.getElementsByClassName('songItems')
 
     let songs = [
         { songName: "Warriyo - Mortals [NCS Release]", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
@@ -42,6 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
   myProgressBar.addEventListener('change', ()=>{
     audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
 })
+
+songItem.array.forEach(element => {
+    element.getElementByTagName('img')[0].src = songs[i].coverPath;
+    element.getElementsByClassName('img')[0].inner = songs[i].coverPath;
+    
+});
+
+
+
 });
 
 
