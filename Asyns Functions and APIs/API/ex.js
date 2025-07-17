@@ -11,22 +11,20 @@ btn.addEventListener("click", async() => {
 
 function show(colleages) {
   let ul = document.querySelector(".ul")
-
   for(col of colleages){
   console.log(col.name);
-
     let li = document.createElement("li");
     li.innerText = col.name;
     ul.appendChild(li);
   }
 }
 
+// let country = "India";
 
 async function getcountry(country) {
   try {
     let res = await axios.get(url + country);
-    return  res.data
-    
+    return  res.data;
   } catch (e) {
     console.log("error", e);
     return [];
