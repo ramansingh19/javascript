@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  background-color: rgb(204, 174, 174);
+  color: black;
+
 }
 
 nav {
@@ -14,8 +19,17 @@ nav {
   padding-left: 20px ;
 }
 
+
+nav li {
+  padding: 10px;
+  border: 2px solid black;
+  background-color: rgb(161, 114, 130);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 .gamecontainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
 
@@ -43,15 +57,30 @@ nav {
 
 .gameinfo {
   padding: 0 34px;
-
+  font-size: 25px;
+  margin-top: 11rem;
+  padding-left: 5rem;
 }
 
-.reset {
-  padding-top: 10px;
+.btn {
+  padding-top: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#reset {
+  font-size: 1.5rem;
+  padding: 7px;
+  background-color: rgb(171, 198, 63);
+  cursor: pointer;
+  border: 2px solid black;
+  
+}
+
 
 .info {
+  margin-top: 300px;
   font-size: 1.5vw;
+  font-size: 3rem;
 }
 
 button {
@@ -85,4 +114,24 @@ nav ul {
   width: 0;
   transition: width 1s ease-in-out;
 
+}
+
+@media screen and (max-width: 1000px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+        
+    }
+    .gameInfo{
+        margin-top: 34px;
+
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
 }

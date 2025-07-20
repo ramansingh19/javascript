@@ -44,8 +44,8 @@ const checkWin = () => {
 };
 
 // Game logic
-music.play()
 let box = document.getElementsByClassName("box");
+
 Array.from(box).forEach((element) => {
   let boxtext = element.querySelector(".boxtext");
   element.addEventListener("click", () => {
@@ -54,9 +54,27 @@ Array.from(box).forEach((element) => {
       Turn = changeTurn(); // Update the turn
       audioturn.play();
       checkWin();
-      if (!isgameover){
-                document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-            } 
+      if (!isgameover) {
+        document.getElementsByClassName("info")[0].innerText =
+          "Turn for " + Turn;
+      }
     }
   });
 });
+ 
+//reset
+// let reset = document.querySelector('#reset');
+reset.addEventListener("click", () => {
+  let boxtext = document.querySelectorAll('.boxtext')
+  Array.from(boxtext).forEach(element => {
+    element.innerText = ""
+  })
+  Turn = 'X'
+  isgameover = false;
+  document.getElementsByClassName("info")[0].innerText =
+          "Turn for " + Turn;
+  document
+        .querySelector(".imgbox")
+        .getElementsByTagName("img")[0].style.width = "0px";
+  
+})
