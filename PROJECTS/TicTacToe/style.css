@@ -37,7 +37,7 @@ nav {
 }
 
 .box:hover {
-  background-color: rgb(173, 156, 136);
+  
   cursor: pointer;
 }
 
@@ -79,4 +79,10 @@ nav ul {
 
 .bb {
   border-bottom: 0;
+}
+
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+
 }
