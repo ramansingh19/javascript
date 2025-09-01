@@ -29,7 +29,7 @@ let code = () => {
   }
   return obj1;
 }
-console.log(code());
+// console.log(code());
 
 
 //Arroe function
@@ -64,4 +64,22 @@ let add = (num1 , num2) => ({username : "raman"})
 
 //(imp) =  implicit --> no return statement ,,,, explicilitly --> required return statement
 
-// ----------------immediately invoked function------------------------------------
+// ----------------immediately invoked function Expression (IIFE)------------------------------------
+
+//Standalone expression
+;(function chai(){
+  console.log("DB connected ");
+  
+})();
+
+( () => {
+  console.log("Db connected two");
+  
+})();
+
+
+( (name) => {
+  console.log(`Aman singh -->  ${name}`);
+  
+})('raman Singh')
+
