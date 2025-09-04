@@ -41,4 +41,25 @@ for(let i = 0; i <= 10; i++){
 }
 
 
+// ------------------------while loop ------------------------------------
+
+let a = 5 ;
+while(a <= 20){
+  if (a == 10) {
+    console.log(`Found the value  : ${a}`);
+    break;
+  }
+  console.log(`value of a : ${a}`);
+  a++;
+}
+
+//do-while loop
+let marks = 102;
+do{
+    console.log(marks);
+    marks++;
+}while (marks < 100) {
+  
+
+}
 
