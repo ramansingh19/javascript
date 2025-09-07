@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Events</title>
+</head>
+<body style="background-color: #212121; color: #fff;"> 
+
+  <h2>Amazing Picture</h2>
+  <div>
+    <ul id="images">
+      <li><img width="200px" id="nanital1" src="images/20240526_111110.jpg" alt="photoshop"></li>
+      <li><img width="200px" id="nanital2" src="images/20240526_120551.jpg" alt=""></li>
+      <li><img width="200px" id="nanital3" src="images/20240526_121627.jpg" alt=""></li>
+      <li><img width="200px" id="nanital4" src="images/20240527_025005.jp" alt=""></li>
+      <li><img width="200px" id="nanital5" src="images/20240528_164153.jpg" alt=""></li>
+      <li><a href="https://www.google.com" id="google" style="color: purple;">Google</a></li>
+    </ul>
+  </div>
+</body>
+<script>
+// --------------------Basic-------------------------------------------
+  // document.querySelector('#images').addEventListener('click', (e) => {
+  //   console.log(alert('clicked all photos'));
+    
+  // }, false)
+
+  // document.querySelector('#nanital3').addEventListener('click', (e) => {
+  //   console.log('clicked photo');
+  //   e.stopPropagation();
+  // }, false)
+
+  // document.querySelector('#google').addEventListener('click',  (e) => {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //     console.log('google clicked');
+  // }, false)
+
+  // // document.querySelector('#images').addEventListener('click', () => {
+  // //   console.log(alert('clicked all photos'));
+    
+  // // }, true)
+
+  // // document.querySelector('#nanital3').addEventListener('click', () => {
+  // //   console.log(alert('clicked photo'));
+    
+  // // }, true)
+
+  // //imp
+  // //we use bubbling(false)--> go bottom to top /  and capturing propagation(true) --> go top to bottom
+
+
+// ------------------------------------med-----------------------------------
+
+document.querySelector('#images').addEventListener('click', (e) => {
+  console.log(e.target.parentNode);
+  if (e.target.tagName === 'IMG') {
+    let removepic = e.target.parentNode
+    removepic.remove();
+  }
+  
+  // removepic.parentNode.removeChild(removepic)
+}, false)
+
+</script>
+</html>
+
+
+<!-- Read this after lecture :- time,timestamp,defaultPrevent, target ,toElement , srcElement , currentTarget, clientX, clientY , screenX , screenY , altket , ctrlkey , shiftkey , keycode -->  

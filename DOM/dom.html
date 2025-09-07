@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom learning</title>
+  <style>body {
+    background-color: #212121;
+    color: #fff;
+  }</style>
+</head>
+<body >
+  
+  <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Saturaday</div>
+  </div>
+</body>
+<script>
+  const parent = document.querySelector('.parent');
+  //console.log(parent);
+//  console.log(parent.children);
+  
+  for (let i = 0; i < parent.children.length; i++) {
+    //console.log(parent.children[i].innerHTML);
+    
+  }
+
+  Array.from(parent.children);
+  let convertparent = Array.from(parent.children);
+
+  convertparent.forEach(  (days) => {
+      console.log(days.innerHTML);
+      days.style.color = 'purple'
+      days.style.padding = '3rem'
+      days.style.margin = '3rem'
+      days.style.backgroundColor = 'blue'
+  })
+
+
+
+  
+  parent
+</script>
+</html>
