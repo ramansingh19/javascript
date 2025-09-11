@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bind</title>
+</head>
+<body>
+  <!-- <button>click me</button>
+  <p class = "og"></p> -->
+
+  <button id="showBtn">Show User Info</button>
+  <p id="userInfo"></p>
+</body>
+<script>
+  // class React {
+  //   constructor(){
+  //     this.library = 'React'
+  //     this.username = 'Raman'
+
+  //     document.querySelector('button').addEventListener('click', this.userdetails.bind(this))
+  //   }
+  //   userdetails(){
+  //     console.log('button clicked');
+  //     console.log(this.library);
+  //     console.log(this.username);
+      
+      
+  //   }
+  // }
+  // const info = new React()
+
+
+  class User {
+  constructor(username, email, age) {
+    this.username = username;
+    this.email = email;
+    this.age = age;
+  }
+
+  getUserDetails() {
+    return `Username: ${this.username}, Email: ${this.email}, Age: ${this.age}`;
+  }
+}
+
+const user = new User('Raman', 'example@gmail.com', 25);
+console.log(user.getUserDetails());
+
+// Add click event to the button
+document.getElementById('showBtn').addEventListener('click', function() {
+  // Select the paragraph element
+  const userInfoPara = document.getElementById('userInfo');
+  
+  // Set the text content to show user details
+  userInfoPara.innerHTML = user.getUserDetails();
+});
+
+
+</script>
+</html>
