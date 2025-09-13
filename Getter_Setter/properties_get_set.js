@@ -10,7 +10,6 @@ function User (email , username ) {
                 this._email = value
           }
         })
-
         Object.defineProperty(this , 'username' , {
           get : function() {
             return this._username.toUpperCase()
