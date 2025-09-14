@@ -50,12 +50,12 @@ let u = () => [2094 , 3439];
 
 //--------------------------Template Literals (`Back Tick`)-----------------
 
-console.log(typeof `Hey Raman what is your birthday Date ?! --> ${1+18} `);
+//console.log(typeof `Hey Raman what is your birthday Date ?! --> ${1+18} `);
 
 
 //--------------------------Default parameter---------------------
 let data = (a= 0,b=0,c=0) => {
-    console.log(a,b,c);
+    //console.log(a,b,c);
     
 }
 data(2,4)
@@ -66,13 +66,13 @@ data(2)
 //spread is use for the copy elements into another varable
 let spread = [1,2,3,4,5,5,6,]
 let copy = [...spread]
-console.log(spread);
-console.log(copy);
+//console.log(spread);
+//console.log(copy);
 
 
 //rest , if u want to concat the elements you have to use ...rest 
 let rest = (a,b,c,...d) => {
-    console.log(a,b,c,d);
+    //console.log(a,b,c,d);
     
 }
 
@@ -83,17 +83,82 @@ rest(2,3,4,4,55,6,6,7,6,4);
 
 let a = [1,2,3,4,5];
 let [b,c,d,,f] = a;//--> ,, this will skip the number 
-console.log(b,c,d,f);
+//console.log(b,c,d,f);
 
 let name = {user : 'Raman' , age : '23'}
 let {user} = name;
 let {age} = name;
-console.log(user);
-console.log(age);
-console.log(name);
+//console.log(user);
+//console.log(age);
+//console.log(name);
 
 
-//
+//---------------------------new  Promises & async  -------------------
 
+let number = new Promise((res , rej) => {
+    let n = Math.floor(Math.random() * 10 ) +  1;
+    //console.log(`Generated number is : ${n}`);
+    
+    if(n < 9){
+        return res(n)
+    }
+    else {
+        return rej(n)
+    }
+})
+
+number.then(n => {
+   // console.log(`number is under the nine :- ${n}`);
+    
+}).catch(n => {
+    //console.log(`number is above then Ten :- ${n}`);
+    
+})
+
+//new problem
+let info = new Promise((res , rej) => {
+        return res('Good Morning')
+})
+
+info.then((data) => {
+    console.log(data);
+
+        return new Promise( (res , rej) => {
+            return res('Go get some breafest meal ')
+
+    }).then((data) => {
+            console.log(data);
+
+        return new Promise((res ,rej) => {
+            return res('Now , go and study')
+            
+    }).then((data) => {
+            console.log(data);
+
+            return new Promise((res ,rej) => {
+                return rej('Aao , beta khana kha loo')
+            }).then((data) => {
+                console.log(data);
+
+                return new Promise((res, rej) =>  {
+                    return res('its time for the bike ride and some refreshment ')
+                }).then((data)=> {
+                        console.log(data); //this is skipped
+                        
+                })//at that point error is pointing to the rej statement 
+                .catch((error) => {
+                    console.log('caught error : ', error);
+                    
+                })
+                
+            })
+            
+    })
+            
+    })
+    
+})
+
+//----------------------------------async await-------------------------------------
 
 
