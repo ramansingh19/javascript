@@ -1,5 +1,5 @@
 //---------------------------------------Interview Questions--------------------
-//let
+// 01 let
 let x = 5;
 //console.log(x);
 
@@ -9,7 +9,7 @@ if(true){
 //console.log(y);
 
 
-//closure --> real life ex
+// 02 closure --> real life ex
 function createBankAccount(intialBalance) {
     let balance = intialBalance;
 
@@ -34,7 +34,7 @@ const account = createBankAccount(10000);
 //console.log(account.checkbalance());
 
 
-//Event loop
+// 03 Event loop
 // "The event loop allows JavaScript to look synchronous while actually handling asynchronous tasks in the background using the call stack, callback queue, and microtask queue."
 //console.log("Start");
 
@@ -46,7 +46,7 @@ setTimeout(() => {
 
 
 
-// Synchronous
+// 04 Synchronous
 //console.log("Task 1");
 //console.log("Task 2");
 
@@ -56,7 +56,7 @@ setTimeout(() => {
 // console.log("End");
 
 
-//Promises in JavaScript
+// 05 Promises in JavaScript
 //A promise is an object that represents the result of an asynchronous operation. It can be in one of three states: pending, fulfilled, or rejected. Instead of using callbacks, we handle the result with .then() for success and .catch() for errors."
 
 const promise = new Promise((resolve, reject) => {
@@ -68,7 +68,7 @@ promise
   //.catch(error => console.log(error));
 
 
-//  async/await
+//  06  async/await
 //async/await is syntactic sugar on top of promises. It makes asynchronous code look synchronous, which is easier to read and maintain.
 //When we mark a function as async, it automatically returns a promise. Inside it, we use await to pause execution until the promise resolves."
 
@@ -87,7 +87,7 @@ fetchData();
 
 
 
-//        call(one-by-one) , apply([]) , bind(return new function )
+//     07   call(one-by-one) , apply([]) , bind(return new function )
 const person = {
   name: "Raman"
 };
@@ -108,7 +108,7 @@ greetPerson("?");                    // Hey, Raman?
 
 
 
-//this in JavaScript
+// 08 this in JavaScript
 
 //"this refers to the object that is currently calling or owning the function. Its value depends on how the function is called, not where it is defined."
 
