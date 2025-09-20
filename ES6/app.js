@@ -121,33 +121,33 @@ let info = new Promise((res , rej) => {
 })
 
 info.then((data) => {
-    console.log(data);
+    //console.log(data);
 
         return new Promise( (res , rej) => {
             return res('Go get some breafest meal ')
 
     }).then((data) => {
-            console.log(data);
+           // console.log(data);
 
         return new Promise((res ,rej) => {
             return res('Now , go and study')
             
     }).then((data) => {
-            console.log(data);
+            //console.log(data);
 
             return new Promise((res ,rej) => {
-                return rej('Aao , beta khana kha loo')
+                return res('Aao , beta khana kha loo')
             }).then((data) => {
-                console.log(data);
+                //console.log(data);
 
                 return new Promise((res, rej) =>  {
                     return res('its time for the bike ride and some refreshment ')
                 }).then((data)=> {
-                        console.log(data); //this is skipped
+                        //console.log(data); //this is skipped
                         
                 })//at that point error is pointing to the rej statement 
                 .catch((error) => {
-                    console.log('caught error : ', error);
+                    //console.log('caught error : ', error);
                     
                 })
                 
@@ -162,3 +162,29 @@ info.then((data) => {
 //----------------------------------async await-------------------------------------
 
 
+async function api() {
+    let raw = await fetch('https://randomuser.me/api/')
+    let data = await raw.json()
+    //console.log(data);
+    
+    // .then((raw) => {
+    //         return raw.json();
+    // }).then((data) => {
+    //         console.log(data);
+            
+    // })
+}
+api();
+
+
+//-------------------------try & catch -------------------------------------
+try{
+    console.log('hey');
+    console.log(hay);
+
+
+}catch(err){
+console.log(err);
+
+}
+console.log('Raman');
