@@ -114,7 +114,7 @@ greetPerson("?");                    // Hey, Raman?
 
 //in regular function 
 function show() {
-  console.log(this);
+  //console.log(this);
 }
 show(); // In browser: window, in strict mode: undefined
 
@@ -123,7 +123,7 @@ show(); // In browser: window, in strict mode: undefined
 const person1 = {
   name: "Raman",
   greet: function() {
-    console.log(this.name);
+    //console.log(this.name);
   }
 };
 person1.greet(); // Raman
@@ -134,5 +134,30 @@ const person2 = {
   greet: () => console.log(this.name)
 };
 person2.greet(); // undefined
+
+//truthy falsy
+if ("hello") {
+  //console.log("This runs because 'hello' is truthy");
+}
+
+if (null) {
+  //console.log("This won't run because 0 is falsy");
+}
+
+
+// Function Declaration
+function greet() {
+  return "Hello!";
+}
+
+console.log(greet()); // ✅ Works, even if called before definition
+
+
+// Function Expression
+const greets = function() {
+  return "Hello!";
+};
+
+console.log(greets()); // ✅ Works, but only after definition
 
 
