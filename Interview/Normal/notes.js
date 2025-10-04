@@ -161,3 +161,6 @@ const greets = function() {
 console.log(greets()); // ✅ Works, but only after definition
 
 
+
+
+
