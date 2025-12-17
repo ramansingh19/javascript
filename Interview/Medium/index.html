@@ -1,13 +1,21 @@
-<div id="parent">
-  <button id="child">Click Me</button>
+<div id="top">top
+  <div id="mid">mid
+    <div id="inner">inner
+
+    </div>
+  </div>
 </div>
 
 <script>
-document.getElementById("parent").addEventListener("click", () => {
-  console.log("Parent clicked!");
-});
+document.getElementById("top").addEventListener("click", () => {
+  console.log("outer clicked!");
+}, true);
 
-document.getElementById("child").addEventListener("click", () => {
-  console.log("Child clicked!");
-});
+document.getElementById("mid").addEventListener("click", () => {
+  console.log("mid clicked!");
+}, true);
+
+document.getElementById("inner").addEventListener("click", () => {
+  console.log("inner clicked!");
+}, true);
 </script>
