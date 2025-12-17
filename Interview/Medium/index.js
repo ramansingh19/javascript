@@ -106,6 +106,26 @@ var variable = 30;
 // console.log(obj.getfullnamev3);
 
 //09
+// const piyush = {
+//   name : 'piyush garg',
+//   sayName : function() {
+//     //console.log(this.name);
+    
+//   }
+// }
+
+// const john = {
+//   name : 'john garg',
+//   sayName : function() {
+//    // console.log(this.name);
+    
+//   }
+// }
+
+// john.sayName.call(piyush);
+
+//10 
+
 const piyush = {
   name : 'piyush garg',
   sayName : function() {
@@ -114,12 +134,21 @@ const piyush = {
   }
 }
 
-const john = {
-  name : 'john garg',
-  sayName : function() {
-    console.log(this.name);
-    
-  }
-}
+setTimeout (() => piyush.sayName() , 3 * 1000);
 
-john.sayName.call(piyush);
+
+//11
+// const obj = {
+//   height : 30,
+// }
+// console.log(obj.height);
+// delete  obj.height
+// console.log(obj.height);
+
+//12
+const obj = Object.create({
+  height : 30,
+})
+console.log(obj.height);
+delete  obj.height
+console.log(obj.height);
