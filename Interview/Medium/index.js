@@ -167,4 +167,71 @@
  //15
 //  what is higher -order function
 
- 
+
+
+// ----------------------------Array---------------------------------------------
+//for each 
+let name = ['java' , 'js' , 'python', 'ruby'];
+
+const items = name.forEach((item) => {
+    //console.log(item);
+    // return item;
+})
+
+ //console.log(items);
+
+
+//filter 
+const num = [1,2,3,4,5,6,7,8,9];
+const value = num.filter((item) => {
+    if (item > 4 && item < 7) {
+      ///console.log(item);
+    return item;
+    }
+    
+})
+
+//console.log(value);
+
+
+const users = [
+  { name: "Ram", active: true },
+  { name: "Shyam", active: false },
+  { name: "Mohan", active: true }
+];
+
+const data = users.filter((user) => {
+    if (user === name) {
+      return user
+      
+    }
+})
+
+//console.log(data);
+
+function Counter() {
+let count = 0; // Private variable
+this.increment = function() {
+count++;
+return count;
+};
+}
+let counter = new Counter();
+// console.log(counter.increment()); // 1
+// console.log(counter.increment()); 
+
+
+let a = [1,2];
+let b = [1 , 1];
+let c = [...a , ...b];
+//console.log(c);
+
+function sum(x,y,z) {
+return x + y + z;
+}
+
+ let numbers = [1,2,3]
+console.log(sum(...numbers));
+
+
+
