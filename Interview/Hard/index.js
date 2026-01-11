@@ -17,3 +17,4 @@ arr.map(() => {
 console.log(arr);
 
 //prime or not 
+
