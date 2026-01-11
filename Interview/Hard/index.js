@@ -14,7 +14,23 @@ arr.map(() => {
   }
 })
 
-console.log(arr);
+//console.log(arr);
 
-//prime or not 
+//prime or not
+function isPrime(num){
+  if(num <= 1) return false
+  if(num === 2) return true
+  if(num % 2 === 0) return false
+
+  for (let i = 0; i < Math.sqrt(num); i++) {
+    if(num % 1 ==0 ) return false;
+    
+  }
+  return true;
+
+}
+console.log(isPrime(4));
+console.log(isPrime(2));
+console.log(isPrime(17));
+
 
