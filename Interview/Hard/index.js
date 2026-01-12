@@ -80,7 +80,44 @@ for (let i = 0; i < name.length; i++) {
   
 }
 
-console.log(count);
+// console.log(count);
+
+//Fabonacci series
+
+let name1 = "lol";
+let array = name1.split("");
+
+let start = 0;
+let end = array.length - 1;
+
+let isPalindrome = true;
+
+while (start < end) {
+  if (array[start] !== array[end]) {
+    isPalindrome = false;
+    break;
+  }
+  start++;
+  end--;
+}
+
+if (isPalindrome) {
+  console.log("It is a palindrome");
+} else {
+  console.log("It is not a palindrome");
+}
+
+//another one 
+let n = 10;
+let a = 10;
+let b = 11;
+
+for (let i = 1; i <= n; i++) {
+  console.log(a);
+  let next = a + b;
+  a = b;
+  b = next;
+}
 
 
 
