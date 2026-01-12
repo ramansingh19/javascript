@@ -64,8 +64,25 @@ for (let i = 0; i <arr4.length; i++) {
   }
   
 }
-console.log(largest);
-console.log(smallest);
+// console.log(largest);
+// console.log(smallest);
+
+//count vowels in string
+
+let name = "Raman"
+
+let count = 0;
+for (let i = 0; i < name.length; i++) {
+  let ch = name[i].toLowerCase();
+  if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+    count++;
+  }
+  
+}
+
+console.log(count);
+
+
 
 
 
