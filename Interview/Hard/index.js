@@ -33,6 +33,7 @@
 // // console.log(isPrime(2));
 // // console.log(isPrime(17));
 
+
 // function isPrimee(num) {
 //     if(num <= 1) return false;
 
@@ -54,7 +55,7 @@
 // let smallest = Number.MAX_SAFE_INTEGER;
 
 // for (let i = 0; i <arr4.length; i++) {
-  
+
 //   if (arr4[i] > largest) {
 //     largest = arr4[i];
 //   }
@@ -126,13 +127,49 @@ let digit = [3,2]
 let sum = 0;
 for (let i = 0; i <digit.length; i++) {
     sum += digit[i];
-  
+
 }
-console.log(sum);
+// console.log(sum);
 
 
 
 //remove duplicate
+let arr = [1,2,3,1,2];
+let result = []
+
+for(let i=0; i<arr.length; i++){
+    let isDuplicate = false;
+
+    for(let j=0; j<result.length; j++){
+        if(arr[i] === arr[j]){
+            isDuplicate = true;
+            break;
+        }
+    }
+    if (!isDuplicate) {
+        result.push(arr[i])
+    }
+}
+// console.log(result);
+
+
+//find how many times a character appears
+
+let str = "RamanKumar"
+let freq = {}
+
+for(let i=0; i<str.length; i++){
+    let ch = str[i];
+
+    if (freq[ch]) {
+        freq[ch]++;
+    }
+    else{
+        freq[ch] = 1;
+    }
+}
+console.log(freq);
+
 
 
 
