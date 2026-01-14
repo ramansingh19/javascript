@@ -171,18 +171,33 @@
 // // console.log(freq);
 
 // //merge two array 
-let arr1 = [1,2,3]
-let arr2 = [5,6,7]
-let result1 = []
+// let arr1 = [1,2,3]
+// let arr2 = [5,6,7]
+// let result1 = []
 
-for(let i=0; i<arr1.length; i++){
-    result1.push(arr1[i])
-}
-for(let j=0; j<arr2.length; j++){
-    result1.push(arr2[j])
-}
+// for(let i=0; i<arr1.length; i++){
+//     result1.push(arr1[i])
+// }
+// for(let j=0; j<arr2.length; j++){
+//     result1.push(arr2[j])
+// }
         
-console.log(result1);
+// console.log(result1);
+
+//Sort an array 
+
+let arr = [1,4,5,7,4,3];
+
+for(let i=0; i<arr.length-1; i++){
+    for(let j=0; j<arr.length-i-1; j++){
+        if (arr[j] > arr[j+1]) {
+            let temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
+        }
+    }
+}
+console.log(arr);
 
 
 
