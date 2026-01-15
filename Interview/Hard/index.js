@@ -218,8 +218,22 @@
 
 
 //palindrome
-let str = "ama"
+let str = "lolol"
+let start = 0;
+let end = str.length-1;
+let result = false;
 
+while(start < end){
+  if (str[start] === str[end]) {
+    result = true;
+    break;
+    
+  }
+  start++;
+  end--;
+}
+
+console.log(result ? 'isPalindrome' : 'Not palindrome')
 
 
 
