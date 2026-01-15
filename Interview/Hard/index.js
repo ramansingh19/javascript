@@ -218,22 +218,38 @@
 
 
 //palindrome
-let str = "lolol"
-let start = 0;
-let end = str.length-1;
-let result = false;
+// let str = "lolol"
+// let start = 0;
+// let end = str.length-1;
+// let result = false;
 
-while(start < end){
-  if (str[start] === str[end]) {
-    result = true;
-    break;
+// while(start < end){
+//   if (str[start] === str[end]) {
+//     result = true;
+//     break;
     
-  }
-  start++;
-  end--;
+//   }
+//   start++;
+//   end--;
+// }
+
+// console.log(result ? 'isPalindrome' : 'Not palindrome')
+
+//fabonacci series 
+//01-> 1->2-> 3->5--> it means start or next ko add krke next value hona chaiye 
+
+let arr = [0,1,1,2,3,5,8];
+
+let fabnoacci = false;
+for(let i=0; i<arr.length-2; i++){
+    if (arr[i] && arr[i+1] === arr[i+2]) {
+      fabnoacci = true;
+      break;
+    }
+  
 }
 
-console.log(result ? 'isPalindrome' : 'Not palindrome')
+console.log(fabnoacci? "this is fabanocci" : "no this is not");
 
 
 
