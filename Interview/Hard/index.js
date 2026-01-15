@@ -186,18 +186,35 @@
 
 //Sort an array 
 
-let arr = [1,4,5,7,4,3];
+// let arr = [1,4,5,7,4,3];
 
-for(let i=0; i<arr.length-1; i++){
-    for(let j=0; j<arr.length-i-1; j++){
-        if (arr[j] > arr[j+1]) {
-            let temp = arr[j];
-            arr[j] = arr[j+1];
-            arr[j+1] = temp;
-        }
+// for(let i=0; i<arr.length-1; i++){
+//     for(let j=0; j<arr.length-i-1; j++){
+//         if (arr[j] > arr[j+1]) {
+//             let temp = arr[j];
+//             arr[j] = arr[j+1];
+//             arr[j+1] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+
+//second largest 
+let arr = [1,2,3,4,5];
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for(let i=0; i<arr.length; i++){
+    if (arr[i] > largest) {
+        secondLargest = largest;
+        largest = arr[i]
+    }else if (arr[i] > secondLargest && arr[i] !== largest) {
+        secondLargest = arr[i];
     }
 }
-console.log(arr);
+console.log(secondLargest);
+console.log(largest);
 
 
 
