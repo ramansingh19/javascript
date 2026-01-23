@@ -17,6 +17,10 @@ const search = (query) => {
 const searchWithdebounce = debounce(search , 100);
 
 
-searchWithdebounce("ha")
-searchWithdebounce("har")
-searchWithdebounce("hard")
+// searchWithdebounce("ha")
+// searchWithdebounce("har")
+// searchWithdebounce("hard")
+
+
+
+
