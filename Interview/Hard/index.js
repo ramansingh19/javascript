@@ -1,271 +1,397 @@
-// // // //reverse 
-// // // let arr = [1,2,3,4,5];
-// // // arr.map(() => {
-// // //   let start = 0; 
-// // //   let end = arr.length-1;
+// // // // //reverse 
+// // // // let arr = [1,2,3,4,5];
+// // // // arr.map(() => {
+// // // //   let start = 0; 
+// // // //   let end = arr.length-1;
 
-// // //   while(start < end){
-// // //     let temp = arr[end];
-// // //     arr[end] = arr[start];
-// // //     arr[start] = temp;
+// // // //   while(start < end){
+// // // //     let temp = arr[end];
+// // // //     arr[end] = arr[start];
+// // // //     arr[start] = temp;
 
-// // //     start++;
-// // //     end--;
-// // //   }
-// // // })
+// // // //     start++;
+// // // //     end--;
+// // // //   }
+// // // // })
 
-// // // //console.log(arr);
+// // // // //console.log(arr);
 
-// // // //prime or not
-// // // function isPrime(num){
-// // //   if(num <= 1) return false
-// // //   if(num === 2) return true
-// // //   if(num % 2 === 0) return false
+// // // // //prime or not
+// // // // function isPrime(num){
+// // // //   if(num <= 1) return false
+// // // //   if(num === 2) return true
+// // // //   if(num % 2 === 0) return false
 
-// // //   for (let i = 0; i < Math.sqrt(num); i++) {
-// // //     if(num % 1 ==0 ) return false;
+// // // //   for (let i = 0; i < Math.sqrt(num); i++) {
+// // // //     if(num % 1 ==0 ) return false;
     
-// // //   }
-// // //   return true;
+// // // //   }
+// // // //   return true;
+
+// // // // }
+// // // // // console.log(isPrime(4));
+// // // // // console.log(isPrime(2));
+// // // // // console.log(isPrime(17));
+
+
+// // // // function isPrimee(num) {
+// // // //     if(num <= 1) return false;
+
+// // // //     for (let i = 2; i <num; i++) {
+// // // //       if(num % i === 0){
+// // // //         return false;
+// // // //       }
+// // // //     }
+// // // //     return true;
+// // // // }
+// // // // // console.log(isPrimee(7));
+// // // // // console.log(isPrimee(2));
+
+// // // // //largest or smallest
+
+// // // // let arr4 = [1,2,3,4,5];
+
+// // // // let largest = Number.MIN_SAFE_INTEGER;
+// // // // let smallest = Number.MAX_SAFE_INTEGER;
+
+// // // // for (let i = 0; i <arr4.length; i++) {
+
+// // // //   if (arr4[i] > largest) {
+// // // //     largest = arr4[i];
+// // // //   }
+// // // //   if (arr4[i] < smallest) {
+// // // //     smallest = arr4[i];
+    
+// // // //   }
+  
+// // // // }
+// // // // // console.log(largest);
+// // // // // console.log(smallest);
+
+// // // // //count vowels in string
+
+// // // // let name = "Raman"
+
+// // // // let count = 0;
+// // // // for (let i = 0; i < name.length; i++) {
+// // // //   let ch = name[i].toLowerCase();
+// // // //   if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+// // // //     count++;
+// // // //   }
+  
+// // // // }
+
+// // // // // console.log(count);
+
+// // // // //Fabonacci series
+
+// // // // let name1 = "lol";
+// // // // let array = name1.split("");
+
+// // // // let start = 0;
+// // // // let end = array.length - 1;
+
+// // // // let isPalindrome = true;
+
+// // // // while (start < end) {
+// // // //   if (array[start] !== array[end]) {
+// // // //     isPalindrome = false;
+// // // //     break;
+// // // //   }
+// // // //   start++;
+// // // //   end--;
+// // // // }
+
+// // // // if (isPalindrome) {
+// // // //   //console.log("It is a palindrome");
+// // // // } else {
+// // // //  // console.log("It is not a palindrome");
+// // // // }
+
+
+// // // // //check even odd
+// // // // let num = 21;
+
+// // // // if (num % 2 ==0) {
+// // // //   console.log("even");
+  
+// // // // }else{
+// // // //   console.log("odd");
+  
+// // // // }
+
+// // // // //Sum of digit 
+
+// // // let digit = [3,2] 
+
+// // // let sum = 0;
+// // // for (let i = 0; i <digit.length; i++) {
+// // //     sum += digit[i];
 
 // // // }
-// // // // console.log(isPrime(4));
-// // // // console.log(isPrime(2));
-// // // // console.log(isPrime(17));
+// // // // console.log(sum);
 
 
-// // // function isPrimee(num) {
-// // //     if(num <= 1) return false;
 
-// // //     for (let i = 2; i <num; i++) {
-// // //       if(num % i === 0){
-// // //         return false;
-// // //       }
+// // // //remove duplicate
+// // // let arr = [1,2,3,1,2];
+// // // let result = []
+
+// // // for(let i=0; i<arr.length; i++){
+// // //     let isDuplicate = false;
+
+// // //     for(let j=0; j<result.length; j++){
+// // //         if(arr[i] === arr[j]){
+// // //             isDuplicate = true;
+// // //             break;
+// // //         }
 // // //     }
-// // //     return true;
+// // //     if (!isDuplicate) {
+// // //         result.push(arr[i])
+// // //     }
 // // // }
-// // // // console.log(isPrimee(7));
-// // // // console.log(isPrimee(2));
+// // // // console.log(result);
 
-// // // //largest or smallest
 
-// // // let arr4 = [1,2,3,4,5];
+// // // //find how many times a character appears
 
-// // // let largest = Number.MIN_SAFE_INTEGER;
-// // // let smallest = Number.MAX_SAFE_INTEGER;
+// // // let str = "RamanKumar"
+// // // let freq = {}
 
-// // // for (let i = 0; i <arr4.length; i++) {
+// // // for(let i=0; i<str.length; i++){
+// // //     let ch = str[i];
 
-// // //   if (arr4[i] > largest) {
-// // //     largest = arr4[i];
-// // //   }
-// // //   if (arr4[i] < smallest) {
-// // //     smallest = arr4[i];
-    
-// // //   }
-  
+// // //     if (freq[ch]) {
+// // //         freq[ch]++;
+// // //     }
+// // //     else{
+// // //         freq[ch] = 1;
+// // //     }
 // // // }
-// // // // console.log(largest);
-// // // // console.log(smallest);
+// // // // console.log(freq);
 
-// // // //count vowels in string
+// // // //merge two array 
+// // // let arr1 = [1,2,3]
+// // // let arr2 = [5,6,7]
+// // // let result1 = []
 
-// // // let name = "Raman"
-
-// // // let count = 0;
-// // // for (let i = 0; i < name.length; i++) {
-// // //   let ch = name[i].toLowerCase();
-// // //   if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-// // //     count++;
-// // //   }
-  
+// // // for(let i=0; i<arr1.length; i++){
+// // //     result1.push(arr1[i])
 // // // }
+// // // for(let j=0; j<arr2.length; j++){
+// // //     result1.push(arr2[j])
+// // // }
+        
+// // // console.log(result1);
 
-// // // // console.log(count);
+// // //Sort an array 
 
-// // // //Fabonacci series
+// // // let arr = [1,4,5,7,4,3];
 
-// // // let name1 = "lol";
-// // // let array = name1.split("");
+// // // for(let i=0; i<arr.length-1; i++){
+// // //     for(let j=0; j<arr.length-i-1; j++){
+// // //         if (arr[j] > arr[j+1]) {
+// // //             let temp = arr[j];
+// // //             arr[j] = arr[j+1];
+// // //             arr[j+1] = temp;
+// // //         }
+// // //     }
+// // // }
+// // // console.log(arr);
 
+
+// // //second largest 
+// // // let arr = [1,2,3,4,5];
+// // // let largest = -Infinity;
+// // // let secondLargest = -Infinity;
+
+// // // for(let i=0; i<arr.length; i++){
+// // //     if (arr[i] > largest) {
+// // //         secondLargest = largest;
+// // //         largest = arr[i]
+// // //     }else if (arr[i] > secondLargest && arr[i] !== largest) {
+// // //         secondLargest = arr[i];
+// // //     }
+// // // }
+// // // console.log(secondLargest);
+// // // console.log(largest);
+
+
+// // //palindrome
+// // // let str = "lolol"
 // // // let start = 0;
-// // // let end = array.length - 1;
+// // // let end = str.length-1;
+// // // let result = false;
 
-// // // let isPalindrome = true;
-
-// // // while (start < end) {
-// // //   if (array[start] !== array[end]) {
-// // //     isPalindrome = false;
+// // // while(start < end){
+// // //   if (str[start] === str[end]) {
+// // //     result = true;
 // // //     break;
+    
 // // //   }
 // // //   start++;
 // // //   end--;
 // // // }
 
-// // // if (isPalindrome) {
-// // //   //console.log("It is a palindrome");
-// // // } else {
-// // //  // console.log("It is not a palindrome");
-// // // }
+// // // console.log(result ? 'isPalindrome' : 'Not palindrome')
 
+// // //fabonacci series 
+// // //01-> 1->2-> 3->5--> it means start or next ko add krke next value hona chaiye 
 
-// // // //check even odd
-// // // let num = 21;
+// // // let arr = [0,1,1,2,3,5,8];
 
-// // // if (num % 2 ==0) {
-// // //   console.log("even");
-  
-// // // }else{
-// // //   console.log("odd");
+// // // let fabnoacci = false;
+// // // for(let i=0; i<arr.length-2; i++){
+// // //     if (arr[i] && arr[i+1] === arr[i+2]) {
+// // //       fabnoacci = true;
+// // //       break;
+// // //     }
   
 // // // }
 
-// // // //Sum of digit 
-
-// // let digit = [3,2] 
-
-// // let sum = 0;
-// // for (let i = 0; i <digit.length; i++) {
-// //     sum += digit[i];
-
-// // }
-// // // console.log(sum);
+// // // console.log(fabnoacci? "this is fabanocci" : "no this is not");
 
 
+// // ------------------------------------interview problems-----------------------------
 
-// // //remove duplicate
-// // let arr = [1,2,3,1,2];
-// // let result = []
-
-// // for(let i=0; i<arr.length; i++){
-// //     let isDuplicate = false;
-
-// //     for(let j=0; j<result.length; j++){
-// //         if(arr[i] === arr[j]){
-// //             isDuplicate = true;
-// //             break;
-// //         }
-// //     }
-// //     if (!isDuplicate) {
-// //         result.push(arr[i])
-// //     }
-// // }
-// // // console.log(result);
-
-
-// // //find how many times a character appears
-
-// // let str = "RamanKumar"
-// // let freq = {}
-
-// // for(let i=0; i<str.length; i++){
-// //     let ch = str[i];
-
-// //     if (freq[ch]) {
-// //         freq[ch]++;
-// //     }
-// //     else{
-// //         freq[ch] = 1;
-// //     }
-// // }
-// // // console.log(freq);
-
-// // //merge two array 
-// // let arr1 = [1,2,3]
-// // let arr2 = [5,6,7]
-// // let result1 = []
-
-// // for(let i=0; i<arr1.length; i++){
-// //     result1.push(arr1[i])
-// // }
-// // for(let j=0; j<arr2.length; j++){
-// //     result1.push(arr2[j])
-// // }
-        
-// // console.log(result1);
-
-// //Sort an array 
-
-// // let arr = [1,4,5,7,4,3];
-
-// // for(let i=0; i<arr.length-1; i++){
-// //     for(let j=0; j<arr.length-i-1; j++){
-// //         if (arr[j] > arr[j+1]) {
-// //             let temp = arr[j];
-// //             arr[j] = arr[j+1];
-// //             arr[j+1] = temp;
-// //         }
-// //     }
-// // }
-// // console.log(arr);
-
-
-// //second largest 
-// // let arr = [1,2,3,4,5];
-// // let largest = -Infinity;
-// // let secondLargest = -Infinity;
-
-// // for(let i=0; i<arr.length; i++){
-// //     if (arr[i] > largest) {
-// //         secondLargest = largest;
-// //         largest = arr[i]
-// //     }else if (arr[i] > secondLargest && arr[i] !== largest) {
-// //         secondLargest = arr[i];
-// //     }
-// // }
-// // console.log(secondLargest);
-// // console.log(largest);
-
-
-// //palindrome
-// // let str = "lolol"
-// // let start = 0;
-// // let end = str.length-1;
-// // let result = false;
-
-// // while(start < end){
-// //   if (str[start] === str[end]) {
-// //     result = true;
-// //     break;
-    
-// //   }
-// //   start++;
-// //   end--;
+// // Fabonacci Series..........................................
+// // let number = 10;
+// // let a = 0, b = 1;
+// // for(let i = 0; i < number; i++){
+// //   console.log(a)
+// //   let temp = a + b;
+// //   a = b;
+// //   b = temp;
 // // }
 
-// // console.log(result ? 'isPalindrome' : 'Not palindrome')
 
-// //fabonacci series 
-// //01-> 1->2-> 3->5--> it means start or next ko add krke next value hona chaiye 
+// var a = [10,11,12,13];
 
-// // let arr = [0,1,1,2,3,5,8];
-
-// // let fabnoacci = false;
-// // for(let i=0; i<arr.length-2; i++){
-// //     if (arr[i] && arr[i+1] === arr[i+2]) {
-// //       fabnoacci = true;
-// //       break;
-// //     }
+// function print(b,...a){
+//   // console.log(a);
   
-// // }
-
-// // console.log(fabnoacci? "this is fabanocci" : "no this is not");
-
+// }
+// // print(8,9,10,11,12)
 
 
+// let arr = [12,"raman" , 2,1,'e', "om" , 1];
+// let number = [];
+// let string = [];
+// let char = [];
+// arr.forEach((ele) => {
+//   if(typeof ele === "number") number.push(ele);
+//   else if(typeof ele === "string" && ele.length === 1) char.push(ele);
+//   else string.push(ele)
+// })
 
-// Fabonacci Series..........................................
-// let number = 10;
-// let a = 0, b = 1;
-// for(let i = 0; i < number; i++){
-//   console.log(a)
-//   let temp = a + b;
-//   a = b;
-//   b = temp;
+// // arr.forEach((ele) => {
+// //     // if(typeof ele == "number") number.push(ele);
+// //     // else if(typeof ele == "string") {
+// //     //   if(ele.length > 1) string.push(ele)
+// //     //   else char.push(ele);
+// //     // }
+// // })
+
+// // console.log(number);
+// // console.log(string);
+// // console.log(char);
+
+
+
+// let obj1 = {};
+// let obj2 = {
+//   name : "raman "
+// }
+// let obj3 = {
+//   name : "aman"
+// }
+// obj1[obj2] = {
+//   name : "saurav"
+// }
+// obj1[obj3] = {
+//   name : "pawan"
+// }
+// obj2[obj3] = {
+//   name : "shivam"
+// }
+// // console.log(obj2[obj2]);
+
+
+// // let a = {};
+// // let b = { key: "b" };
+// // let c = { key: "c" };
+
+// // a[b] = 123;
+// // a[c] = 456;
+
+// // console.log(a[b]);
+// // Both b and c become:
+// // "[object Object]"
+
+
+// let obj = {};
+// obj[[1,2]] = "Hello";
+// obj[[3,4]] = "World";
+// // console.log(obj);
+// // [1,2].toString() → "1,2"
+
+
+// // console.log("5" + 3);
+// // console.log("5" - 3);
+// console.log(3 - "5");
+
+// // +  → string concat
+// // -  → number conversion
+
+
+// // console.log(typeof null);
+// // console.log(typeof undefined);
+// // console.log(null == undefined);
+// // console.log(null === undefined);
+
+// // all object is truthy in js
+// if ([]) {
+//   // console.log("Hi");
+  
 // }
 
 
+// let array = [1,2,3];
+// array.length = 0;
 
+// // console.log(array);
+
+
+
+// let arr = [1,2,3];
+// delete arr[1];
+// console.log(arr);
+// console.log(arr.length);
+// delete removes value, not index.
+
+// console.log(a);
+// var a = 10;
+
+
+// console.log(b);
+// let b = 20;
+
+// function test(){
+//   return 1;
+// }
+// function test(){
+//   return 2;
+// }
+
+// console.log(test());
+
+
+// for(var i=0;i<3;i++){
+//   setTimeout(()=>{
+//     console.log(i);
+//   },1000);
+// }
+//single shared i 
 
 
 
