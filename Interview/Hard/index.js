@@ -411,3 +411,12 @@
 // };
 
 // obj.show();
+
+// console.log(NaN === NaN);
+
+// console.log(Boolean("true"));
+// console.log(Boolean("false"));
+
+
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
