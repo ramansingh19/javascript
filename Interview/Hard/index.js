@@ -266,12 +266,14 @@
 
 
 // var a = [10,11,12,13];
-
+// var b = [...a]
 // function print(b,...a){
-//   // console.log(a);
+//   console.log(a);
+//   console.log(b);
   
+
 // }
-// // print(8,9,10,11,12)
+// print(8,9,10,11,12)
 
 
 // let arr = [12,"raman" , 2,1,'e', "om" , 1];
@@ -470,3 +472,12 @@
 //     }, 0);
 //   })(i);
 // }
+
+
+//Event Loop Order
+console.log("A");
+setTimeout(() => console.log("B"), 0);
+Promise.resolve().then(() => console.log("C"));
+console.log("D");
+
+
