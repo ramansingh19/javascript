@@ -78,3 +78,33 @@ outer();
 
 //Event Bubbling
 
+
+//settimeout 
+(
+  function data(){
+    console.log("start");
+    
+    setTimeout(() => {
+      console.log("printed");
+      
+    }, 1000)
+    console.log("end");
+    
+  }
+  
+)()
+
+
+//closure
+function closure(){
+  let char = 1;
+  return function() {
+    return char++;
+    
+  }
+}
+
+const count = closure()
+console.log(count());
+console.log(count());
+console.log(count());
