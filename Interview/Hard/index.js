@@ -362,7 +362,7 @@
 // // console.log(array);
 
 
-
+//Delete vs Undefined
 // let arr = [1,2,3];
 // delete arr[1];
 // console.log(arr);
@@ -372,20 +372,21 @@
 // console.log(a);
 // var a = 10;
 
-
+//Let Hoisting Trap
 // console.log(b);
 // let b = 20;
 
+
+//Function Overwriting
 // function test(){
 //   return 1;
 // }
 // function test(){
 //   return 2;
 // }
-
 // console.log(test());
 
-
+//setTimeout + var
 // for(var i=0;i<3;i++){
 //   setTimeout(()=>{
 //     console.log(i);
@@ -394,6 +395,7 @@
 //single shared i 
 
 
+//this Inside Arrow
 // let obj = {
 //   name: "JS",
 //   show: () => {
@@ -401,7 +403,7 @@
 //   }
 // };
 
-
+//this Normal Function
 // obj.show();
 // let obj = {
 //   name: "JS",
@@ -412,11 +414,59 @@
 
 // obj.show();
 
+//NaN Comparison
 // console.log(NaN === NaN);
 
+//Boolean of String
 // console.log(Boolean("true"));
 // console.log(Boolean("false"));
 
+// Chained Comparison
+// console.log(1 < 2 < 3);
+// console.log(3 > 2 > 1);
 
-console.log(1 < 2 < 3);
-console.log(3 > 2 > 1);
+//Object Mutation
+// const user = { name: "A" };
+// user.name = "B";
+// console.log(user);
+
+//Spread Reference
+// let a = {x:1};
+// let b = {...a};
+// b.x = 2;
+
+// console.log(a.x);
+// console.log(b.x);
+// console.log(b.a);
+
+
+//Deep Copy Trap
+// let a = {x:{y:1}};
+// let b = {...a};
+// b.x.y = 5;
+
+// console.log(a.x.y);
+//spread is shallow copy that is why , if it is deep copy it would not convert 
+
+// let x = 5;
+// console.log(x++ + ++x);
+
+
+//Closure + Loop + IIFE
+// for (var i = 0; i < 3; i++) {
+//   (function () {
+//     setTimeout(() => {
+//       console.log(i);
+//     }, 1000);
+//   })();
+// }
+
+
+//Fix Above Without let
+// for (var i = 0; i < 3; i++) {
+//   (function (x) {
+//     setTimeout(() => {
+//       console.log(x);
+//     }, 0);
+//   })(i);
+// }
