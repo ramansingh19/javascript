@@ -394,5 +394,20 @@
 //single shared i 
 
 
+// let obj = {
+//   name: "JS",
+//   show: () => {
+//     console.log(this.name);
+//   }
+// };
 
 
+// obj.show();
+// let obj = {
+//   name: "JS",
+//   show: function () {
+//     console.log(this.name);
+//   }
+// };
+
+// obj.show();
