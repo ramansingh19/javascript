@@ -349,7 +349,7 @@
 
 // // all object is truthy in js
 // if ([]) {
-//   // console.log("Hi");
+//   console.log("Hi");
   
 // }
 
@@ -357,7 +357,7 @@
 // let array = [1,2,3];
 // array.length = 0;
 
-// // console.log(array);
+// console.log(array);
 
 
 //Delete vs Undefined
@@ -471,9 +471,26 @@
 
 
 //Event Loop Order
-console.log("A");
-setTimeout(() => console.log("B"), 0);
-Promise.resolve().then(() =>  console.log("C"));
-console.log("D");
+// console.log("A");
+// setTimeout(() => console.log("B"), 0);
+// Promise.resolve().then(() =>  console.log("C"));
+// console.log("D");
 
+//24
+// async function test(){
+// console.log(1);
+// await Promise.resolve();
+// console.log(2);
+// }
+// console.log(3);
+// test();
+// console.log(4);
 
+//25
+let obj={
+name:"JS",
+show:function(){
+return ()=>console.log(this.name);
+}
+};
+obj.show().call({name:"Node"});
