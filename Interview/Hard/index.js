@@ -499,10 +499,13 @@
 
 
 //26
-function A(){}
-A.prototype.x=10;
-let a1=new A();
-A.prototype={x:20};
-let a2=new A();
-console.log(a1.x);
-console.log(a2.x);
+// function A(){}
+// A.prototype.x=10;
+// let a1=new A();
+// //this will create new object and a1 have still the value of x : 10
+// A.prototype={x:20};
+// let a2=new A();
+// console.log(a1.x); 
+// console.log(a2.x);
+// Each object connects to the prototype at the time it is created.
+// Changing A.prototype later does NOT update old objects.
