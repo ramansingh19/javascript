@@ -511,19 +511,30 @@
 // Changing A.prototype later does NOT update old objects.
 
 //27
-function test(a,b){
-arguments[0]=10;
-console.log(a);
+// function test(a,b){
+// arguments[0]=10;
+// console.log(a);
 
+// }
+// test(5,6);
+
+// function sum() {
+//   let total = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     total += arguments[i];
+//   }
+//   return total;
+// }
+
+// console.log(sum(1,2,3));
+
+//29
+let test=()=>{
+console.log(arguments);
 }
-test(5,6);
+test(1,2,3);
 
-function sum() {
-  let total = 0;
-  for (let i = 0; i < arguments.length; i++) {
-    total += arguments[i];
-  }
-  return total;
+function demo(){
+  console.log(arguments);
 }
-
-console.log(sum(1,2,3));
+demo(2,3,44)
