@@ -529,12 +529,28 @@
 // console.log(sum(1,2,3));
 
 //29
-let test=()=>{
-console.log(arguments);
-}
-test(1,2,3);
+// let test=()=>{
+// console.log(arguments);
+// }
+// test(1,2,3);
 
-function demo(){
-  console.log(arguments);
+//or
+// let arg=(...args)=>{
+// console.log(args);
+// }
+// arg(1,2,3);
+
+//demo
+// function demo(){
+//   console.log(arguments);
+// }
+// demo(2,3,44)
+
+
+//30
+function User(){
+this.name="A";
+return {name:"B"};
 }
-demo(2,3,44)
+let u=new User();
+console.log(u.name);
