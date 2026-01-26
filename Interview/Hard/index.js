@@ -490,7 +490,9 @@
 let obj={
 name:"JS",
 show:function(){
-return ()=>console.log(this.name);
+return () => {
+  console.log(this.name);
+}
 }
 };
-obj.show().call({name:"Node"});
+obj.show().call({name : "raman"})
