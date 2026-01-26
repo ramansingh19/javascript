@@ -266,12 +266,8 @@
 
 
 // var a = [10,11,12,13];
-// var b = [...a]
 // function print(b,...a){
 //   console.log(a);
-//   console.log(b);
-  
-
 // }
 // print(8,9,10,11,12)
 
@@ -477,7 +473,7 @@
 //Event Loop Order
 console.log("A");
 setTimeout(() => console.log("B"), 0);
-Promise.resolve().then(() => console.log("C"));
+Promise.resolve().then(() =>  console.log("C"));
 console.log("D");
 
 
