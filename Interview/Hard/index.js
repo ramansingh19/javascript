@@ -487,12 +487,22 @@
 // console.log(4);
 
 //25
-let obj={
-name:"JS",
-show:function(){
-return () => {
-  console.log(this.name);
-}
-}
-};
-obj.show().call({name : "raman"})
+// let obj={
+// name:"JS",
+// show:function(){
+// return () => {
+//   console.log(this.name);
+// }
+// }
+// };
+// obj.show().call({name : "raman"})
+
+
+//26
+function A(){}
+A.prototype.x=10;
+let a1=new A();
+A.prototype={x:20};
+let a2=new A();
+console.log(a1.x);
+console.log(a2.x);
