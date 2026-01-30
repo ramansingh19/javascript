@@ -543,14 +543,16 @@
 //demo
 // function demo(){
 //   console.log(arguments);
-// }
+// }ddfwd
 // demo(2,3,44)
 
 
 //30
-function User(){
-this.name="A";
-return {name:"B"};
-}
-let u=new User();
-console.log(u.name);
+// function User(){
+// this.name="A";
+// return {name:"B"};
+// }
+// let u=new User();
+// console.log(u.name);
+
+//
