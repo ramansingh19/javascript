@@ -567,4 +567,47 @@
 // console.log(counter());
 // console.log(counter());
 
+//singleton pattern
+class Singleton {
+  constructor() {
+    if (Singleton.instance) {
+      return Singleton.instance;
+    }
+    Singleton.instance = this;
+  }
+}
+
+const a = new Singleton();
+const b = new Singleton();
+
+// console.log(a === b); // 
+
+// class NumberStore {
+//   constructor() {
+//     if (NumberStore.instance) {
+//       return NumberStore.instance;
+//     }
+//     this.numbers = [];
+//     NumberStore.instance = this;
+//   }
+
+//   add(num) {
+//     this.numbers.push(num);
+//   }
+
+//   get() {
+//     return this.numbers;
+//   }
+// }
+
+// const s1 = new NumberStore();
+// s1.add(10);
+
+// const s2 = new NumberStore();
+// s2.add(20);
+
+// console.log(s1.get()); 
+// console.log(s2.get());
+
+
 
