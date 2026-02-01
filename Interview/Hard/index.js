@@ -609,5 +609,59 @@ const b = new Singleton();
 // console.log(s1.get()); 
 // console.log(s2.get());
 
+//Event Emitter 
+class myEventlistener {
+  constructor() {
+    this.__event_listener = {};
+  }
+
+  // register
+  on(event, listener) {
+    if (!this.__event_listener[event]) {
+      this.__event_listener[event] = [];
+    }
+    this.__event_listener[event].push(listener);
+  }
+
+  emit(event, ...args) {
+    if (!this.__event_listener[event]) {
+      return false;
+    }
+    const listeners = this.__event_listener[event];
+    listeners.forEach(listener => listener(...args));
+  }
+
+  off(event, listener) {
+    if (!this.__event_listener[event]) {
+      return false;
+    }
+
+    const index = this.__event_listener[event].indexOf(listener);
+
+    if (index < 0) {
+      return false;
+    }
+
+    this.__event_listener[event].splice(index, 1);
+    return true;
+  }
+}
+
+const e = new myEventlistener();
+
+const whatsapp = (username) => console.log('whatsapp to', username);
+e.on('user:message', whatsapp);
+e.on('user:signup', (username) => console.log('user signUp', username));
+e.on('user:message', (username) => console.log('message sent to', username));
+e.on('user:logout', (username) => console.log('logout', username));
+
+e.emit('user:signup', '@raman');
+e.off('user:message', whatsapp);   // remove whatsapp listener
+
+e.emit('user:message', '@aman');   // whatsapp will NOT run
+
+e.emit('user:logout', '@raman');
+e.on('user:message', whatsapp);
+
 
 
