@@ -654,12 +654,9 @@ e.on('user:message', whatsapp);
 e.on('user:signup', (username) => console.log('user signUp', username));
 e.on('user:message', (username) => console.log('message sent to', username));
 e.on('user:logout', (username) => console.log('logout', username));
-
 e.emit('user:signup', '@raman');
 e.off('user:message', whatsapp);   // remove whatsapp listener
-
 e.emit('user:message', '@aman');   // whatsapp will NOT run
-
 e.emit('user:logout', '@raman');
 e.on('user:message', whatsapp);
 
