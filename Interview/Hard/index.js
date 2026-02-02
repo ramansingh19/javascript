@@ -699,7 +699,18 @@ const b = new Singleton();
   
 // }
 
-//proxy and reflect object
+//functional programming 
+const cart = [
+  {name:"pen", price:10},
+  {name:"book", price:50}
+];
+
+const total = cart
+  .map(item => item.price)
+  .reduce((sum, p) => sum + p, 0);
+
+console.log(total); // 60
+
 
 
 
