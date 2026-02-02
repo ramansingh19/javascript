@@ -661,27 +661,46 @@ const b = new Singleton();
 // e.on('user:message', whatsapp);
 
 //getter and setter 
-class Reactangle {
-  constructor(width , height){
-    this.width = width
-    this.height = height
-  }
+// class Reactangle {
+//   constructor(width , height){
+//     this.width = width
+//     this.height = height
+//   }
 
-  get area () {
-    return this.width * this.height
-  }
+//   get area () {
+//     return this.width * this.height
+//   }
 
-  set area(value){
-    this.width =  Math.sqrt(value)
-    this.height = Math.sqrt(value)
-  }
-}
+//   set area(value){
+//     this.width =  Math.sqrt(value)
+//     this.height = Math.sqrt(value)
+//   }
+// }
 
-const rect = new Reactangle(3,5)
-console.log(rect.area);
-rect.area = 30;
-console.log(rect.width);
-console.log(rect.height);
+// const rect = new Reactangle(3,5)
+// console.log(rect.area);
+// rect.area = 4;
+// console.log(rect.width);
+// console.log(rect.height);
+
+//fetch 
+
+// fetch("url")
+// .then(response => {
+//     if(!response.ok){
+//       console.log("something");
+      
+//     }
+//     return response.json();
+
+// })
+// .catch(error){
+//   console.log(error);
+  
+// }
+
+//proxy and reflect object
+
 
 
 
