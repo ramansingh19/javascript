@@ -700,7 +700,7 @@ const b = new Singleton();
 // }
 
 //functional programming 
-// js is not purley fp but it has some principal of fp like imutability , first class , recursive , 
+// js is not purley fp but it has some principal of fp like imutability , first class , recursive , pure function , higher-order
 const cart = [
   {name:"pen", price:10},
   {name:"book", price:50}
