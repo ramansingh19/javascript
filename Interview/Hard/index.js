@@ -713,6 +713,7 @@ const total = cart
 console.log(total); // 60
 
 
+//
 
 
 
