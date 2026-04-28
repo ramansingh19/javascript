@@ -65,48 +65,67 @@
 //     console.log("hey");
 //     // resolve("success")
 //     reject("error")
-    
+
 //   })
 // }
 
 // let Promises = getpromisedata();
 // Promises.then(() => {
 //   console.log("got success ");
-  
+
 // })
 
 // Promises.catch(() => {
 //   console.log("skdjbjbf");
-  
+
 // })
 
 
 //promise chaining 
-function data1() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("hello");
-      resolve("success")
-    }, 2000)
-  })
-}
+// function data1() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("hello");
+//       resolve("success")
+//     }, 2000)
+//   })
+// }
 
-function data2() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("hello");
-      resolve("success")
-    }, 2000)
-  })
-}
+// function data2() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("hello");
+//       resolve("success")
+//     }, 2000)
+//   })
+// }
 
 
-data1().then((res) => {
-  console.log("fetching data 1");
-  console.log(res);
-  data2().then((res) => {
-      console.log("fetching data 2");
-      console.log(res);
-      
-  })
-})
+// data1().then((res) => {
+//   console.log("fetching data 1");
+//   console.log(res);
+//   data2().then((res) => {
+//       console.log("fetching data 2");
+//       console.log(res);
+
+//   })
+// })
+
+
+//call and apply
+// function getname(city1, city2) {
+//   console.log(this.fname + " " + this.lname + "lives in " + city1, city2);
+
+// }
+
+// let person = {
+//   fname: "Raman",
+//   lname: "Kumar"
+// }
+
+// let cities = ["Delhi", "Mumbai"]
+
+// getname.apply(person, cities)
+
+
+//
